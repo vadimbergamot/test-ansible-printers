@@ -1,0 +1,15 @@
+---
+default:
+  tags:
+    - mytag
+
+stages:
+  - run
+
+variables:
+  ANSIBLE_BECOME_PASS: $S_PASS
+
+run-ansible-playbook:
+  stage: run
+  script:
+    - ansible-playbook 67_test_install_prn.yml 
