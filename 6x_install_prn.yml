@@ -1,0 +1,15 @@
+---
+- name: Install first services for server 
+  hosts: print_servers_test
+  become : true
+  become_user : root
+  remote_user : goblin
+  become_method: sudo
+
+  vars_files:
+    - ./printers.yml
+
+  roles:
+
+    # Установка очередей печати
+    - {role: setup_printer_67_test, when: ansible_system == 'Linux'}
