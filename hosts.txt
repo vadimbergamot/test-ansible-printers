@@ -1,0 +1,2 @@
+[print_servers_test]
+host_name_zz-lxxxyyxzz ansible_host=70.27.41.179 ansible_port=12121 ansible_user=ansible-user #ansible_become_pass={{ "${S_PASS}" }}
