@@ -1,0 +1,43 @@
+printers:
+  - name: W3180-089
+    printer_name: W3180-089
+    printer_uri: socket://10.67.1.55:9100
+    printer_ppd: lsb/usr/HP/hp-laserjet_mfp_m426_m427-ps.ppd.gz
+    printer_des: "HP M426 C3180-089 Windows {{ ansible_hostname }}"
+    printer_location: "Калининград, ул. Фрунзе 107"
+
+  - name: C3180-089
+    printer_name: C3180-089
+    printer_uri: ipp://10.67.1.55/ipp/printer
+    printer_ppd: everywhere
+    printer_des: "HP M426 C3180-089 IPP {{ ansible_hostname }}"
+    printer_location: "Калининград, ул. Фрунзе 107"
+
+  - name: W3180-755
+    printer_name: W3180-755
+    printer_uri: socket://10.67.1.17:9100
+    printer_ppd: lsb/usr/brother/brother-MFCL6900DW-cups-en.ppd
+    printer_des: "Bro 6950 C3180-755 Windows {{ ansible_hostname }}"
+    printer_location: "Калининград, ул.Фрунзе 107"
+
+  - name: C3180-755
+    printer_name: C3180-755
+    printer_uri: ipp://10.67.1.17/ipp/printer
+    printer_ppd: everywhere
+    printer_des: "Bro 6950 C3180-755 IPP {{ ansible_hostname }}"
+    printer_location: "Калининград, ул.Фрунзе 107"
+
+  - name: C3180-906
+    printer_name: C3180-906
+    printer_uri: ipp://10.67.1.17/ipp/printer
+    printer_ppd: everywhere
+    printer_des: "HP M4303 C3180-906 Linux {{ ansible_hostname }}"
+    printer_location: "Калининград, ул.Фрунзе 107"
+
+  - name: R3180-756
+    printer_name: R3180-756
+    printer_uri: socket://10.67.16.111:9100
+    printer_ppd: lsb/usr/brother/brother-MFCL6900DW-cups-en.ppd
+    printer_des: "Bro 6950 R3180-756 Windows {{ ansible_hostname }}"
+    printer_location: "Калининград, Ленинский проспект 95, оперзал"
+
